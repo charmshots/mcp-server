@@ -1,0 +1,6 @@
+{
+  "brand": "Charmshots",
+  "endpoint": "https://mcp.charmshots.com/mcp",
+  "version": "1.2.1",
+  "scope": "profile:read photos:read"
+}
