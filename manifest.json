@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "charmshots",
+  "display_name": "Charmshots",
+  "version": "1.2.1",
+  "description": "Read-only MCP connector for Charmshots photoshoots, photo metadata and owner-authenticated links.",
+  "long_description": "Charmshots creates portraits from your own selfies, with settings and styles for dating profiles, headshots and everyday introductions. Choose scenes that fit your life, review each result closely, and keep the frames that feel like you. The photo collection, practical guides and free image tools help you plan a more considered profile. get_profile reads your account. list_photoshoots, get_photoshoot and list_photos browse existing owned outputs with signed-in download links. No image generation or credit spending. The MCP does not generate or analyze images and does not spend credits. Photo metadata is not a visual quality assessment, and download links require the owner\u2019s product sign-in. The website currently says purchases are temporarily paused; browse the current collection and availability before planning a new shoot. AI portraits cannot guarantee dating matches.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://charmshots.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charmshots/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}
